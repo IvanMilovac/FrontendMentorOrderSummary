@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --width-mobile: 376px;
+  --width-desktop: 1440px;
+  --clr-primary-100: hsl(225, 100%, 94%);
+  --clr-primary-700: hsl(245, 75%, 52%);
+  --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-300: hsl(224, 23%, 55%);
+  --clr-neutral-800: hsl(223, 47%, 23%);
+  --font-size: 1rem;
+  --font-weight-normal: 500;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 900;
+  --ff-red-hat: "Red Hat Display", sans-serif;
+}
+
+body {
+  font-family: var(--ff-red-hat);
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-size: 100% 200%;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .main-card {
+  width: 88vw;
+  max-width: 389px;
+  height: 80vh;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+main .main-card > img {
+  width: 100%;
+}
+
+main .main-card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+main .main-card .card-content h1 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  margin: 0.8rem 0;
+}
+
+main .main-card .card-content p {
+  width: 79%;
+  text-align: center;
+  color: var(--clr-neutral-300);
+  line-height: 1.55;
+}
+
+main .main-card .card-content .sub-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  background: var(--clr-neutral-100);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+main .main-card .card-content .sub-card img {
+  -webkit-box-flex: 0.8;
+      -ms-flex-positive: 0.8;
+          flex-grow: 0.8;
+  margin-right: 0.5rem;
+}
+
+main .main-card .card-content .sub-card div {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+main .main-card .card-content .sub-card div .offer-title {
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-neutral-800);
+  font-size: 0.9rem;
+}
+
+main .main-card .card-content .sub-card div .offer-price {
+  color: var(--clr-neutral-300);
+  font-size: 0.9rem;
+}
+
+main .main-card .card-content .sub-card a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--clr-primary-700);
+  font-weight: var(--font-weight-semibold);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+main .main-card .card-content .payment-btn {
+  display: inline-block;
+  padding-block: 0.8rem;
+  width: 95%;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9rem;
+  border-radius: 0.7rem;
+  background: var(--clr-primary-700);
+  color: white;
+  -webkit-box-shadow: 0 17px 13px var(--clr-primary-100);
+          box-shadow: 0 17px 13px var(--clr-primary-100);
+  margin-bottom: 0.7rem;
+}
+
+main .main-card .card-content .cancel-btn {
+  color: var(--clr-neutral-300);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 600px) {
+  body {
+    background: url("../../images/pattern-background-desktop.svg"), var(--clr-primary-100);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+  body .main-card .card-content .sub-card a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  body .main-card .card-content .payment-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  body .main-card .card-content .cancel-btn:hover {
+    color: var(--clr-neutral-800);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=main.css.map */

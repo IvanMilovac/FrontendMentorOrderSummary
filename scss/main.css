@@ -24,7 +24,7 @@
 
 body {
   font-family: var(--ff-red-hat);
-  background-image: url("../../images/pattern-background-mobile.svg");
+  background-image: url("./../images/pattern-background-mobile.svg");
   background-size: 100% 200%;
   width: 100vw;
   height: 100vh;
@@ -153,7 +153,7 @@ main .main-card .card-content .cancel-btn {
 
 @media (min-width: 600px) {
   body {
-    background: url("../../images/pattern-background-desktop.svg"), var(--clr-primary-100);
+    background: url("./../images/pattern-background-desktop.svg"), var(--clr-primary-100);
     background-size: 100% 60%;
     background-repeat: no-repeat;
     width: 100vw;

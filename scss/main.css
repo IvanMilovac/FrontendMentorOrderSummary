@@ -41,7 +41,6 @@ main {
 main .main-card {
   width: 88vw;
   max-width: 389px;
-  height: 80vh;
   border-radius: 1.5rem;
   overflow: hidden;
   background-color: #fff;
@@ -68,7 +67,7 @@ main .main-card .card-content {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  padding: 0.8rem;
+  padding: 1.2rem 0.8rem;
 }
 
 main .main-card .card-content h1 {
